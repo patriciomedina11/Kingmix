@@ -1,0 +1,35 @@
+@use "../utilities/variables" as vars;
+
+.boton-comprar {
+    background-color: vars.$verde-kingmix;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: auto;
+
+    &:hover {
+        background-color: vars.$marron-kingmix;
+    }
+}
+
+.boton-whatsapp,
+.boton-instagram {
+    display: inline-block;
+    background-color: #9acd32;
+    padding: 10px 18px;
+    color: white;
+    border-radius: 8px;
+
+    i {
+        color: white;
+    }
+
+    &:hover {
+        background-color: #7fb823;
+        color: white;
+        text-decoration: none;
+    }
+}

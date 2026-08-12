@@ -1,0 +1,38 @@
+.contactos-footer {
+    background-color: #5c3a21;
+    color: white;
+    padding: 40px 30px;
+
+    h2 {
+        color: #9acd32;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    a {
+        color: #9acd32;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            color: #c7f04b;
+            text-decoration: underline;
+        }
+    }
+
+    i {
+        color: #9acd32;
+    }
+
+    .boton-whatsapp,
+    .boton-instagram {
+        color: white;
+    }
+
+    .boton-whatsapp i,
+    .boton-instagram i {
+        color: white;
+    }
+}

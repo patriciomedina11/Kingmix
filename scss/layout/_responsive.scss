@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+
+    .menu {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .tituloindex,
+    .parrafoindex {
+        font-size: 180%;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .hero-contenido {
+        padding: 25px;
+        gap: 10px;
+    }
+
+    .indexheader {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .sobre-productos {
+        padding: 25px;
+    }
+
+    .productos h2::before,
+    .productos h2::after {
+        width: 60px;
+    }
+
+    .articuloimg {
+        width: 260px;
+    }
+
+    .contactos-footer {
+        text-align: center;
+    }
+}

@@ -1,0 +1,15 @@
+@use "utilities/variables";
+@use "utilities/mixins";
+@use "components/buttons";
+@use "components/cards";
+@use "layout/responsive";
+@use "layout/footer";
+@use "base/base";
+@use "layout/header";
+@use "layout/products";
+.contenedor-productos {
+    @include mixins.flex-center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+

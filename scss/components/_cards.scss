@@ -1,0 +1,55 @@
+%tarjeta-base {
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.articuloimg {
+    @extend %tarjeta-base;
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(92, 58, 33, 0.20);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    img {
+    width: 100%;
+    border-radius: 10px;
+    height: 285px;
+    object-fit: cover;
+}
+}
+
+.producto-snack {
+    @extend %tarjeta-base;
+
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(92, 58, 33, 0.20);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    }
+
+    .presentaciones {
+        margin-top: auto;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        height: 285px;
+        object-fit: cover;
+    }
+}
+
+.img-noquis {
+    object-fit: contain;
+    transform: scale(0.99);
+}
