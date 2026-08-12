@@ -44,3 +44,23 @@
         text-align: center;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-productos,
+    .lista-productos {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .articuloimg,
+    .producto-snack {
+        width: 280px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero-contenido {
+        padding: 30px;
+    }
+}
