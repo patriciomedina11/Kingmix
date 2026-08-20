@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snacks | KingMix</title>
-<meta name="description" content="Descubrí los snacks KingMix: almendras, nueces, castañas de cajú, bananas deshidratadas, maní tostado y más opciones para disfrutar.">
+    <meta name="description"
+        content="Descubrí los snacks KingMix: almendras, nueces, castañas de cajú, bananas deshidratadas, maní tostado y más opciones para disfrutar.">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header class="header-snacks">
-      <a href="../index.html">← Volver al inicio</a>
+        <a href="../index.html">← Volver al inicio</a>
         <h1>Snacks KingMix</h1>
         <p>Elegí tus favoritos</p>
     </header>
@@ -24,14 +25,39 @@
             <article class="producto-snack">
                 <h3>Almohaditas</h3>
                 <img src="../img/almohaditas.jpg" alt="Almohaditas KingMix">
-                <p><strong>Sabores disponibles:</strong></p>
-                <p>Frutilla · Chocolate · Avellana</p>
+                <div class="selector-sabores">
+                    <button type="button" data-sabor="frutilla">Frutilla</button>
+                    <button type="button" data-sabor="avellana">Avellana</button>
+                    <button type="button" data-sabor="chocolate">Chocolate</button>
+                </div>
 
-                <p class="presentaciones"><strong>Presentaciones:</strong></p>
-                <p>180 g · 500 g · 1 kg</p>
+                <div class="carrusel-precios">
+
+                    <div class="precio-slide" id="frutilla">
+                        <strong>Frutilla</strong>
+                        <p>250 g — $2.700</p>
+                        <p>500 g — $5.300</p>
+                        <p>1 kg — $9.000</p>
+                    </div>
+
+                    <div class="precio-slide" id="avellana">
+                        <strong>Avellana</strong>
+                        <p>250 g — $2.700</p>
+                        <p>500 g — $5.300</p>
+                        <p>1 kg — $9.000</p>
+                    </div>
+
+                    <div class="precio-slide" id="chocolate">
+                        <strong>Chocolate</strong>
+                        <p>250 g — $3.000</p>
+                        <p>500 g — $5.900</p>
+                        <p>1 kg — $9.500</p>
+                    </div>
+
+                </div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20almohaditas">
-                    Consultar precio
+                    Comprar por WhatsApp
                 </a>
             </article>
             <article class="producto-snack">
@@ -40,12 +66,15 @@
 
                 <img src="../img/almendras.jpg" alt="Almendras KingMix">
 
-                <p class="presentaciones"><strong>Presentaciones:</strong></p>
-                <p>180 g · 500 g · 1 kg</p>
+                <div class="precios-producto">
+                    <p><strong>180 g</strong> — $6.100</p>
+                    <p><strong>500 g</strong> — $15.600</p>
+                    <p><strong>1 kg</strong> — $27.000</p>
+                </div>
 
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20almendras">
-                    Consultar precio
+                    Comprar por WhatsApp
                 </a>
             </article>
             <article class="producto-snack">
@@ -53,12 +82,14 @@
                 <h3>Nueces</h3>
 
                 <img src="../img/nueces.jpg" alt="Nueces KingMix">
-                <p class="presentaciones"><strong>Presentaciones:</strong></p>
-                <p>180 g · 500 g · 1 kg</p>
-
+                <div class="precios-producto">
+                    <p><strong>180 g</strong> — $3.900</p>
+                    <p><strong>500 g</strong> — $10.250</p>
+                    <p><strong>1 kg</strong> — $17.500</p>
+                </div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20nueces">
-                    Consultar precio
+                    Comprar por WhatsApp
                 </a>
             </article>
             <article class="producto-snack">
@@ -67,12 +98,14 @@
 
                 <img src="../img/castañas.jpeg" alt="Castañas De Cajú KingMix">
 
-                <p class="presentaciones"><strong>Presentaciones:</strong></p>
-                <p>180 g · 500 g · 1 kg</p>
-
+                <div class="precios-producto">
+                    <p><strong>180 g</strong> — $4.250</p>
+                    <p><strong>500 g</strong> — $10.000</p>
+                    <p><strong>1 kg</strong> — $18.000</p>
+                </div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20castañas%20de%20cajú">
-                    Consultar precio
+                    Comprar por WhatsApp
                 </a>
             </article>
             <article class="producto-snack">
@@ -81,34 +114,56 @@
 
                 <img src="../img/bananas.webp" alt="Bananas Deshidratadas KingMix">
 
-                <p class="presentaciones"><strong>Presentaciones:</strong></p>
-                <p>180 g · 500 g · 1 kg</p>
+                <div class="precios-producto">
+                    <p><strong>180 g</strong> — $3.300</p>
+                    <p><strong>500 g</strong> — $8.200</p>
+                    <p><strong>1 kg</strong> — $14.000</p>
+                </div>
 
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20bananas%20deshidratadas">
-                    Consultar precio
+                    Comprar por WhatsApp
                 </a>
             </article>
             <article class="producto-snack">
 
-    <h3>Maní tostado</h3>
+                <h3>Maní tostado</h3>
 
-    <img src="../img/mani.jpg" alt="Maní tostado KingMix">
+                <img src="../img/mani.jpg" alt="Maní tostado KingMix">
 
-    <p><strong>Variedades:</strong></p>
-    <p>Con sal · Sin sal</p>
+                <div class="bloque-mani">
+                    <p class="variedades-mani">Con sal · Sin sal</p>
 
-    <p class="presentaciones"><strong>Presentaciones:</strong></p>
-    <p>180 g · 500 g · 1 kg</p>
+                    <div class="precios-producto">
+                        <p><strong>180 g</strong> — $900</p>
+                        <p><strong>500 g</strong> — $2.000</p>
+                        <p><strong>1 kg</strong> — $3.500</p>
+                    </div>
+                </div>
+                <a class="boton-comprar"
+                    href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20del%20maní%20tostado">
+                    Comprar por WhatsApp
+                </a>
 
-    <a class="boton-comprar"
-       href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20del%20maní%20tostado">
-        Consultar precio
-    </a>
-
-</article>
+            </article>
         </section>
     </main>
+    <script>
+        const botonesSabores = document.querySelectorAll(".selector-sabores button");
+        const carrusel = document.querySelector(".carrusel-precios");
+
+        botonesSabores.forEach((boton) => {
+            boton.addEventListener("click", () => {
+                const sabor = boton.dataset.sabor;
+                const slide = document.getElementById(sabor);
+
+                carrusel.scrollTo({
+                    left: slide.offsetLeft - carrusel.offsetLeft,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

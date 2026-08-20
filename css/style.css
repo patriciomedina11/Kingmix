@@ -81,6 +81,86 @@
   transform: scale(0.99);
 }
 
+.carrusel-precios {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  scrollbar-width: none;
+}
+
+.carrusel-precios::-webkit-scrollbar {
+  display: none;
+}
+
+.precio-slide {
+  min-width: 100%;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.precio-slide p {
+  margin: 4px 0;
+}
+
+.selector-sabores {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 15px 0;
+}
+.selector-sabores button {
+  background-color: #9acd32;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.precios-producto {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+.precios-producto p {
+  margin: 8px 0;
+}
+
+.variedades-mani {
+  text-align: center;
+  margin: 8px 0 0;
+}
+
+.bloque-mani {
+  margin-top: 35px;
+  text-align: center;
+}
+.bloque-mani .variedades-mani {
+  margin: 0 0 12px;
+}
+.bloque-mani .precios-producto {
+  margin-top: 0;
+}
+
+.producto-snack > p:not(.precios-producto p) {
+  min-height: 55px;
+}
+
+.ingredientes {
+  min-height: 55px;
+  text-align: center;
+}
+
+.pagina-mixes .precios-producto {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.pagina-mixes .ingredientes {
+  min-height: 38px;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 80px;
