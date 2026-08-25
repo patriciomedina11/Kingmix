@@ -456,3 +456,37 @@ main {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.productos-encargo {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4efe7;
+
+  h2 {
+    color: #5c3a21;
+    margin-bottom: 15px;
+  }
+
+  p {
+  margin: 0 auto 20px;
+  font-size: 18px;
+  max-width: 650px;
+  text-align: center;
+}
+}
+
+.boton-catalogo {
+  display: inline-block;
+  background-color: #9acd32;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+}
