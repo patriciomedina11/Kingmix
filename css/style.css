@@ -490,3 +490,42 @@ main {
     opacity: 0.9;
   }
 }
+
+.pastas-mani .producto-snack img {
+    width: 100%;
+    height: 305px;
+    object-fit: contain;
+    object-position: center;
+    transform-origin: center;
+}
+
+/* Ajuste visual de cada pote */
+
+.pastas-mani .pasta-natural {
+    transform: scale(1);
+}
+
+.pastas-mani .pasta-protein {
+    transform: scale(1.05);
+}
+
+.pastas-mani .pasta-semillas {
+    transform: scale(0.95);
+}
+
+.contenedor-pasta-img {
+    width: 100%;
+    height: 305px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.tarjeta-pasas .presentaciones {
+    margin-bottom: 15px;
+}
+
+.tarjeta-pasas .precios-producto {
+    margin-top: 65px;
+}
