@@ -337,6 +337,10 @@ html {
   flex-direction: column;
   gap: 20px;
   align-items: flex-start;
+     background: rgba(0, 0, 0, 0.38);
+    border-radius: 18px;
+    max-width: 620px;
+    backdrop-filter: blur(3px);
 }
 
 .indexheaderbtn {
