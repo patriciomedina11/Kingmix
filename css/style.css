@@ -533,3 +533,92 @@ main {
 .tarjeta-pasas .precios-producto {
     margin-top: 65px;
 }
+/* BOTÓN DE BENEFICIOS */
+
+.beneficios-producto {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.beneficios-producto summary {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 18px;
+
+    background-color: #1f6b2a;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Quita la flecha predeterminada */
+.beneficios-producto summary::-webkit-details-marker {
+    display: none;
+}
+
+.beneficios-producto summary::marker {
+    display: none;
+    content: "";
+}
+
+.beneficios-producto summary:hover {
+    background-color: #174f20;
+}
+
+/* Contenido desplegable */
+
+.beneficios-contenido {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #f5f9f5;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.beneficios-contenido p {
+    margin: 7px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.producto-snack .boton-comprar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.producto-snack .boton-comprar {
+    width: 100%;
+    box-sizing: border-box;
+}
+.producto-snack .boton-comprar {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* ALINEAR BENEFICIOS Y BOTONES AL FINAL DE LAS TARJETAS */
+
+.producto-snack {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-snack .precios-producto {
+    margin-bottom: 0;
+}
+
+.producto-snack .beneficios-producto {
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+
+.producto-snack .boton-comprar {
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
