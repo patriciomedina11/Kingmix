@@ -14,7 +14,6 @@
     <header class="header-snacks">
         <a href="../index.html">← Volver al inicio</a>
         <h1>Snacks KingMix</h1>
-        <p>Elegí tus favoritos</p>
     </header>
     <main class="pagina-productos">
 
@@ -63,39 +62,117 @@
         <p>✓ Saludables, livianas y ricas.</p>
     </div>
 </details>
+<!-- SELECTOR PARA AGREGAR AL PEDIDO -->
+<div class="selector-pedido">
+
+    <label for="presentacion-almohaditas">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-almohaditas">
+        <option value="">Seleccionar presentación</option>
+        <option value="250" data-precio="3000">250 g</option>
+        <option value="500" data-precio="5500">500 g</option>
+        <option value="1000" data-precio="9000">1 kg</option>
+    </select>
+
+    <label for="cantidad-almohaditas">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-almohaditas"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Almohaditas"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20almohaditas">
                     Comprar por WhatsApp
                 </a>
             </article>
+
             <article class="producto-snack">
 
-                <h3>Almendras</h3>
+    <h3>Almendras</h3>
 
-                <img src="../img/almendras.jpg" alt="Almendras KingMix">
+    <img src="../img/almendras.jpg" alt="Almendras KingMix">
 
-                <div class="precios-producto">
-                    <p><strong>180 g</strong> — $6.000</p>
-                    <p><strong>500 g</strong> — $16.000</p>
-                    <p><strong>1 kg</strong> — $27.000</p>
-                </div>
-<details class="beneficios-producto">
-    <summary>¿Por qué elegirlas?</summary>
+    <div class="precios-producto">
+        <p><strong>180 g</strong> — $6.000</p>
+        <p><strong>500 g</strong> — $16.000</p>
+        <p><strong>1 kg</strong> — $27.000</p>
+    </div>
 
-<div class="beneficios-contenido">
-    <p>✓ Ayudan a mantener una buena salud cardiovascular gracias a sus grasas insaturadas.</p>
-    <p>✓ Su vitamina E contribuye a proteger las células frente al daño oxidativo.</p>
-    <p>✓ Su aporte de fibra favorece el funcionamiento intestinal.</p>
-    <p>✓ Sus proteínas y grasas ayudan a generar mayor sensación de saciedad.</p>
-</div>
-</details>
-                <a class="boton-comprar"
-                    href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20almendras">
-                    Comprar por WhatsApp
-                </a>
-            </article>
-            <article class="producto-snack">
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirlas?</summary>
 
+        <div class="beneficios-contenido">
+            <p>✓ Ayudan a mantener una buena salud cardiovascular gracias a sus grasas insaturadas.</p>
+            <p>✓ Su vitamina E contribuye a proteger las células frente al daño oxidativo.</p>
+            <p>✓ Su aporte de fibra favorece el funcionamiento intestinal.</p>
+            <p>✓ Sus proteínas y grasas ayudan a generar mayor sensación de saciedad.</p>
+        </div>
+    </details>
+
+    <!-- SISTEMA DE PEDIDOS KINGMIX -->
+
+  <div class="selector-pedido">
+
+        <label for="presentacion-almendras">
+            Presentación:
+        </label>
+
+        <select id="presentacion-almendras">
+            <option value="">Seleccionar presentación</option>
+            <option value="180" data-precio="6000">180 g - $6.000</option>
+            <option value="500" data-precio="16000">500 g - $16.000</option>
+            <option value="1000" data-precio="27000">1 kg - $27.000</option>
+        </select>
+
+        <label for="cantidad-almendras">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-almendras"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Almendras"
+        >
+            <i class="fa-solid fa-plus"></i>
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20almendras"
+    >
+        Comprar por WhatsApp
+    </a>
+
+</article>
+
+<article class="producto-snack">
                 <h3>Nueces</h3>
 
                 <img src="../img/nueces.jpg" alt="Nueces KingMix">
@@ -114,6 +191,53 @@
         <p>✓ Su combinación de grasas, proteínas y fibra favorece la sensación de saciedad.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - NUECES -->
+
+<div class="selector-pedido">
+
+    <label for="presentacion-nueces">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-nueces">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="4500">
+            180 g - $4.500
+        </option>
+
+        <option value="500" data-precio="10000">
+            500 g - $10.000
+        </option>
+
+        <option value="1000" data-precio="18000">
+            1 kg - $18.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-nueces">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-nueces"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Nueces"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20nueces">
                     Comprar por WhatsApp
@@ -140,6 +264,55 @@
         <p>✓ Aportan proteínas y grasas que ayudan a generar sensación de saciedad.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - CASTAÑAS DE CAJÚ -->
+
+<div class="selector-pedido">
+
+    <label for="presentacion-caju">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-caju">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="4500">
+            180 g - $4.500
+        </option>
+
+        <option value="500" data-precio="10000">
+            500 g - $10.000
+        </option>
+
+        <option value="1000" data-precio="18000">
+            1 kg - $18.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-caju">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-caju"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Castañas de cajú"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20castañas%20de%20cajú">
                     Comprar por WhatsApp
@@ -167,6 +340,53 @@
         <p>✓ Son una opción práctica para sumar energía en desayunos, meriendas o colaciones.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - BANANAS DESHIDRATADAS -->
+
+<div class="selector-pedido">
+
+    <label for="presentacion-bananas">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-bananas">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="4000">
+            180 g - $4.000
+        </option>
+
+        <option value="500" data-precio="8000">
+            500 g - $8.000
+        </option>
+
+        <option value="1000" data-precio="15000">
+            1 kg - $15.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-bananas">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-bananas"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Bananas deshidratadas"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20bananas%20deshidratadas">
                     Comprar por WhatsApp
@@ -197,6 +417,63 @@
         <p>✓ Su combinación de proteínas, grasas y fibra ayuda a generar sensación de saciedad.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - MANÍ TOSTADO -->
+
+<div class="selector-pedido">
+
+    <label for="variedad-mani">
+        Elegí la variedad:
+    </label>
+
+    <select id="variedad-mani">
+        <option value="">Seleccionar variedad</option>
+        <option value="Con sal">Con sal</option>
+        <option value="Sin sal">Sin sal</option>
+    </select>
+
+    <label for="presentacion-mani">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-mani">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="1500">
+            180 g - $1.500
+        </option>
+
+        <option value="500" data-precio="3000">
+            500 g - $3.000
+        </option>
+
+        <option value="1000" data-precio="5000">
+            1 kg - $5.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-mani">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-mani"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Maní tostado"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20del%20maní%20tostado">
                     Comprar por WhatsApp
@@ -225,6 +502,53 @@
         <p>✓ Contienen compuestos antioxidantes presentes naturalmente en las uvas.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - PASAS DE UVA -->
+
+<div class="selector-pedido">
+
+    <label for="presentacion-pasas">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-pasas">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="2000">
+            180 g - $2.000
+        </option>
+
+        <option value="500" data-precio="3500">
+            500 g - $3.500
+        </option>
+
+        <option value="1000" data-precio="6000">
+            1 kg - $6.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-pasas">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-pasas"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Pasas de uva"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20las%20Pasas%20de%20Uva">
                     Comprar por WhatsApp
@@ -252,6 +576,53 @@
         <p>✓ Es una opción nutritiva y versátil para incorporar en desayunos y meriendas.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - AVENA INSTANTÁNEA -->
+
+<div class="selector-pedido">
+
+    <label for="presentacion-avena">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-avena">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="1000">
+            180 g - $1.000
+        </option>
+
+        <option value="500" data-precio="2500">
+            500 g - $2.500
+        </option>
+
+        <option value="1000" data-precio="4000">
+            1 kg - $4.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-avena">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-avena"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Avena Instantánea"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20Avena%20Instantanea">
                     Comprar por WhatsApp
@@ -266,7 +637,7 @@
                 <div class="precios-producto">
                     <p><strong>180 g</strong> — $1000</p>
                     <p><strong>500 g</strong> — $2.000</p>
-                    <p><strong>1 kg</strong> — $3.900</p>
+                    <p><strong>1 kg</strong> — $4.000</p>
                 </div>
                 <details class="beneficios-producto">
     <summary>¿Por qué elegirla?</summary>
@@ -278,6 +649,53 @@
         <p>✓ Es práctica para sumar sabor, textura y nutrientes a distintas preparaciones.</p>
     </div>
 </details>
+<!-- SISTEMA DE PEDIDOS - GRANA DE MANÍ -->
+
+<div class="selector-pedido">
+
+    <label for="presentacion-grana">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-grana">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="1000">
+            180 g - $1.000
+        </option>
+
+        <option value="500" data-precio="2000">
+            500 g - $2.000
+        </option>
+
+        <option value="1000" data-precio="3900">
+            1 kg - $4.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-grana">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-grana"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Grana de Maní"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
                 <a class="boton-comprar"
                     href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20Grana%20de%20Mani">
                     Comprar por WhatsApp
@@ -306,7 +724,53 @@
             <p>✓ Son ideales para incorporar en yogures, desayunos y licuados.</p>
         </div>
     </details>
+<!-- SISTEMA DE PEDIDOS - SEMILLAS DE CHÍA -->
 
+<div class="selector-pedido">
+
+    <label for="presentacion-chia">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-chia">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="2000">
+            180 g - $2.000
+        </option>
+
+        <option value="500" data-precio="5000">
+            500 g - $5.000
+        </option>
+
+        <option value="1000" data-precio="10000">
+            1 kg - $10.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-chia">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-chia"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Semillas de Chía"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
     <a class="boton-comprar"
        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20Semillas%20de%20Chia"
        target="_blank"
@@ -339,7 +803,53 @@
             <p>✓ Son ideales para incorporar en ensaladas, yogures y preparaciones caseras.</p>
         </div>
     </details>
+<!-- SISTEMA DE PEDIDOS - SEMILLAS DE GIRASOL -->
 
+<div class="selector-pedido">
+
+    <label for="presentacion-girasol">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-girasol">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="1500">
+            180 g - $1.500
+        </option>
+
+        <option value="500" data-precio="3000">
+            500 g - $3.000
+        </option>
+
+        <option value="1000" data-precio="5000">
+            1 kg - $5.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-girasol">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-girasol"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Semillas de Girasol"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
     <a class="boton-comprar"
        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20Semillas%20de%20Girasol"
        target="_blank"
@@ -372,7 +882,53 @@
             <p>✓ Son ideales para incorporar en ensaladas, panes, yogures y preparaciones caseras.</p>
         </div>
     </details>
+<!-- SISTEMA DE PEDIDOS - SEMILLAS DE SÉSAMO BLANCO -->
 
+<div class="selector-pedido">
+
+    <label for="presentacion-sesamo">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-sesamo">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="2000">
+            180 g - $2.000
+        </option>
+
+        <option value="500" data-precio="5000">
+            500 g - $5.000
+        </option>
+
+        <option value="1000" data-precio="9000">
+            1 kg - $9.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-sesamo">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-sesamo"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Semillas de Sésamo Blanco"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
     <a class="boton-comprar"
        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20Semillas%20de%20Sesamo%20Blanco"
        target="_blank"
@@ -405,7 +961,53 @@
             <p>✓ Son ideales para consumir como snack o incorporar en ensaladas, yogures y preparaciones caseras.</p>
         </div>
     </details>
+<!-- SISTEMA DE PEDIDOS - SEMILLAS DE ZAPALLO -->
 
+<div class="selector-pedido">
+
+    <label for="presentacion-zapallo">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-zapallo">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="180" data-precio="5000">
+            180 g - $5.000
+        </option>
+
+        <option value="500" data-precio="11000">
+            500 g - $11.000
+        </option>
+
+        <option value="1000" data-precio="22000">
+            1 kg - $22.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-zapallo">
+        Cantidad:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-zapallo"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Semillas de Zapallo"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
     <a class="boton-comprar"
        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20Semillas%20de%20Zapallo"
        target="_blank"
@@ -419,7 +1021,7 @@
 
     <h3>Barritas Proteicas Entrenuts</h3>
 
-   <img src="../img/barritasfrutilla.webp"
+<img src="../img/barritafrutilla.png"
      alt="Barritas Proteicas Entrenuts Frutilla KingMix">
 
     <div class="precios-producto">
@@ -437,7 +1039,45 @@
         </div>
 
     </details>
+<!-- SISTEMA DE PEDIDOS - BARRITAS PROTEICAS -->
 
+<div class="selector-pedido">
+
+    <label for="presentacion-barritas">
+        Elegí la presentación:
+    </label>
+
+    <select id="presentacion-barritas">
+
+        <option value="">Seleccionar presentación</option>
+
+        <option value="unidad" data-precio="2000">
+            1 unidad - $2.000
+        </option>
+
+    </select>
+
+    <label for="cantidad-barritas">
+        Cantidad de barritas:
+    </label>
+
+    <input
+        type="number"
+        id="cantidad-barritas"
+        min="1"
+        value="1"
+    >
+
+    <button
+        type="button"
+        class="boton-agregar-pedido"
+        data-producto="Barritas Proteicas Entrenuts"
+    >
+        <i class="fa-solid fa-plus"></i>
+        Agregar a mi pedido
+    </button>
+
+</div>
     <a class="boton-comprar"
        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20las%20Barritas%20Proteicas%20Entrenuts"
        target="_blank"
@@ -464,6 +1104,112 @@
             });
         });
     </script>
+    <!-- SISTEMA DE PEDIDOS KINGMIX -->
+     <!-- BOTÓN FLOTANTE MI PEDIDO -->
+<button
+  type="button"
+  id="abrir-pedido"
+  class="pedido-flotante"
+  aria-controls="panel-pedido"
+  aria-expanded="false"
+>
+  <i class="fa-solid fa-clipboard-list"></i>
+  Mi pedido
+  <span id="pedido-contador">0</span>
+</button>
+     <!-- FONDO OSCURO -->
+<div id="pedido-overlay" class="pedido-overlay"></div>
+
+<!-- BARRA LATERAL -->
+<aside
+  id="panel-pedido"
+  class="panel-pedido"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="titulo-pedido"
+  aria-hidden="true"
+  inert
+>
+  <!-- ENCABEZADO -->
+  <div class="pedido-encabezado">
+
+    <div>
+      <h2 id="titulo-pedido">
+        <i class="fa-solid fa-clipboard-list"></i>
+        Mi pedido KingMix
+      </h2>
+
+      <p>Tu lista de productos para enviar por WhatsApp.</p>
+    </div>
+
+    <button
+      type="button"
+      id="cerrar-pedido"
+      class="pedido-cerrar"
+      aria-label="Cerrar lista de pedidos"
+    >
+      &times;
+    </button>
+
+  </div>
+
+  <!-- PRODUCTOS SELECCIONADOS -->
+  <div id="pedido-productos" class="pedido-productos">
+
+    <div class="pedido-vacio">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <h3>Tu lista está vacía</h3>
+      <p>Explorá nuestros productos y agregá tus favoritos.</p>
+    </div>
+
+  </div>
+
+  <!-- RESUMEN DEL PEDIDO -->
+  <div class="pedido-resumen">
+
+    <div class="pedido-total">
+      <span>Total estimado</span>
+      <strong id="pedido-precio-total">$0</strong>
+    </div>
+
+    <p class="pedido-aviso">
+      <i class="fa-solid fa-circle-info"></i>
+      Los precios y la disponibilidad están sujetos
+      a confirmación. Tu pedido se coordina
+      directamente por WhatsApp.
+    </p>
+
+    <!-- WHATSAPP -->
+    <button
+      type="button"
+      id="enviar-pedido"
+      class="pedido-whatsapp"
+      disabled
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Consultar pedido por WhatsApp
+      <span>→</span>
+    </button>
+
+    <!-- ACCIONES -->
+    <div class="pedido-acciones">
+
+      <button type="button" id="vaciar-pedido">
+        <i class="fa-regular fa-trash-can"></i>
+        Vaciar lista
+      </button>
+
+      <button type="button" id="seguir-comprando">
+        <i class="fa-solid fa-plus"></i>
+        Seguir agregando
+      </button>
+
+    </div>
+
+  </div>
+
+</aside>
+<script src="../js/pedidos.js" defer></script>
 </body>
 
 </html>

@@ -17,34 +17,101 @@
 
 <!--cabeza de pagina-->
 <body class="body">
-  <header class="indexheader">
+<header class="indexheader">
+
     <nav class="navbar">
-      <img src="./img/logo-kingmix.png.png" alt="logo de kingmix" class="logo">
-      <!--botones arriba a la derecha-->
-      <ul class="menu">
-        <li class="snacks"><a href="#snacks">Snacks</a></li>
-        <li class="mixs"><a href="#mixes">Mixes</a></li>
-        <li class="contactos"><a href="#contactos">Contactos</a></li>
-      </ul>
+
+        <!-- LOGO KINGMIX -->
+        <img src="./img/logo-kingmix.png.png"
+             alt="Logo oficial KingMix"
+             class="logo">
+
+        <!-- NOMBRE DE LA MARCA -->
+        <a href="./index.html" class="navbar-marca">
+            KING<span>MIX</span>
+        </a>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <ul class="menu">
+            <li class="snacks"><a href="#snacks">Snacks</a></li>
+            <li class="mix"><a href="#mixes">Mixes</a></li>
+            <li class="contactos"><a href="#contactos">Contactos</a></li>
+        </ul>
+
     </nav>
 
-    <div class="hero-contenido">
-    <h1 class="tituloindex">Bienvenidos a Kingmix</h1>
-    <p class="parrafoindex indexheadertitulopremium">Los Mejores Snacks Premium</p>
-    <a href="#snacks" class="colorblanco indexheaderbtn">Selecciona Tu Mix</a>
+   <div class="hero-contenido">
+
+    <div class="hero-texto">
+        <span class="hero-etiqueta">BIENVENIDOS A KINGMIX</span>
+
+        <h1 class="tituloindex">
+            Naturalmente <br>
+            en tu día.
+        </h1>
+
+        <p class="parrafoindex">
+            Frutos secos, mixes y snacks saludables
+            para acompañarte en cada momento.
+        </p>
+
+        <a href="#snacks" class="indexheaderbtn">
+            Explorar productos →
+        </a>
     </div>
+
+  <div class="hero-imagen">
+    <img src="./img/kingmix-portada.png"
+         alt="Frutos secos y mixes KingMix">
+</div>
+</div>
+
   </header>
 
   <!--seccion de pagina(parrafo descriptivo)-->
-  <section class="sobre-productos">
-      <h2>Sobre nuestros productos</h2>
+ <!-- SECCIÓN SOBRE KINGMIX -->
 
-      <p>En KingMix seleccionamos ingredientes de calidad para crear snacks ricos, frescos y equilibrados. Trabajamos con frutos secos, frutas deshidratadas y mixes pensados para acompañarte en cualquier momento del día.
+<section class="sobre-productos">
 
-Encontrá combinaciones ideales para el desayuno, una colación, antes o después de entrenar, o simplemente para disfrutar cuando quieras.
-      </p>
- 
-  </section>
+    <div class="sobre-contenedor">
+
+        <span class="sobre-etiqueta">
+            CONOCÉ NUESTRA ESENCIA
+        </span>
+
+        <h2>Sobre KingMix</h2>
+
+        <p class="sobre-descripcion">
+            Seleccionamos frutos secos, mixes y snacks de calidad
+            para acompañarte en cada momento del día.
+            Descubrí nuestra variedad de productos y elegí tus favoritos.
+        </p>
+
+        <div class="sobre-beneficios">
+
+            <div class="beneficio-card">
+                <span class="beneficio-icono">🥜</span>
+                <h3>Calidad seleccionada</h3>
+                <p>Productos elegidos cuidadosamente para vos.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <span class="beneficio-icono">🌿</span>
+                <h3>Variedad de productos</h3>
+                <p>Frutos secos, mixes, semillas y mucho más.</p>
+            </div>
+
+            <div class="beneficio-card">
+                <span class="beneficio-icono">💬</span>
+                <h3>Pedidos fáciles</h3>
+                <p>Elegí tus favoritos y consultanos por WhatsApp.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
   <!--inicio de main(muestra de mixs)-->
   <main>
     <section class="productos" id="snacks">
@@ -89,43 +156,214 @@ Encontrá combinaciones ideales para el desayuno, una colación, antes o despué
 </article>
 </div>
 </section>
+<!-- SECCIÓN MAYORISTA KINGMIX -->
 <section class="productos-encargo">
-  <h2>Productos Mayorista Por Encargo</h2>
 
-  <p>
-    ¿Buscás algo más? Tenemos una amplia variedad de productos
-    disponibles para tu negocio
-  </p>
-<p class="consulta-catalogo">
-  Consultá stock y precios antes de realizar tu pedido.
-</p>
+    <div class="mayorista-card">
 
- <a href="./pdf/catalogo-mayorista-kingmix.pdf"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="boton-catalogo">
-  Ver catálogo completo
-</a>
+        <span class="mayorista-etiqueta">
+            VENTAS MAYORISTAS
+        </span>
+
+        <h2>Potenciá tu negocio con KingMix</h2>
+
+        <p class="mayorista-descripcion">
+            Descubrí nuestra variedad de frutos secos,
+            mixes, semillas y snacks saludables.
+            Productos ideales para sumar a tu negocio.
+        </p>
+
+        <p class="consulta-catalogo">
+            Consultá disponibilidad y precios antes
+            de realizar tu pedido.
+        </p>
+
+        <a href="./pdf/catalogo-mayorista-kingmix.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="boton-catalogo">
+            Ver catálogo mayorista →
+        </a>
+
+    </div>
+
 </section>
 </main>
 <!--inicio de contactos-->
-<footer id="contactos" class="contactos-footer">
-    <h2>Contactanos</h2>
-    <p>
-<a href="https://wa.me/5491135046185" target="_blank" rel="noopener noreferrer" class="boton-whatsapp">
-  <i class="fa-brands fa-whatsapp"></i>
-  +54 9 11 3504-6185
-</a>
-</p>
-  <p>
-   <a href="https://www.instagram.com/kingmix.ok/"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="boton-instagram">
-   <i class="fa-brands fa-instagram"></i>
-   @kingmix.ok
-</a>
-</p>
+<!-- FOOTER KINGMIX -->
+<footer id="contactos" class="footer-kingmix">
+
+  <div class="footer-contenedor">
+
+    <!-- MARCA -->
+    <div class="footer-columna footer-marca">
+      <h2>KING<span>MIX</span></h2>
+
+      <p>
+        Naturalmente en tu día.
+        Frutos secos, mixes y snacks saludables
+        para acompañarte en cada momento.
+      </p>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <div class="footer-columna">
+      <h3>Explorá KingMix</h3>
+
+      <ul>
+        <li><a href="pages/snacks.html">Snacks</a></li>
+        <li><a href="pages/mixes.html">Mixes</a></li>
+        <li><a href="pages/premezclas.html">Premezclas sin TACC</a></li>
+        <li><a href="pages/pastasdemani.html">Pastas de Maní</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="footer-columna">
+      <h3>Conectá con nosotros</h3>
+
+      <a
+        href="https://wa.me/5491135046185"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-red"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+      </a>
+
+      <a
+        href="https://www.instagram.com/kingmix.ok/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-red"
+      >
+        <i class="fa-brands fa-instagram"></i>
+        @kingmix.ok
+      </a>
+    </div>
+
+  </div>
+
+  <!-- PARTE INFERIOR -->
+  <div class="footer-inferior">
+    <p>© 2026 KingMix. Todos los derechos reservados.</p>
+    <p>Naturalmente en tu día 🌿</p>
+  </div>
+
 </footer>
+<!-- =====================================
+     KINGMIX - SISTEMA DE PEDIDOS
+===================================== -->
+
+<!-- BOTÓN FLOTANTE -->
+<button
+  type="button"
+  id="abrir-pedido"
+  class="pedido-flotante"
+  aria-label="Abrir mi lista de pedidos"
+  aria-controls="panel-pedido"
+  aria-expanded="false"
+>
+  <i class="fa-solid fa-clipboard-list"></i>
+  Mi pedido
+  <span id="contador-pedido">0</span>
+</button>
+
+<!-- FONDO OSCURO -->
+<div id="pedido-overlay" class="pedido-overlay"></div>
+
+<!-- BARRA LATERAL -->
+<aside
+  id="panel-pedido"
+  class="panel-pedido"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="titulo-pedido"
+  aria-hidden="true"
+  inert
+>
+  <!-- ENCABEZADO -->
+  <div class="pedido-encabezado">
+
+    <div>
+      <h2 id="titulo-pedido">
+        <i class="fa-solid fa-clipboard-list"></i>
+        Mi pedido KingMix
+      </h2>
+
+      <p>Tu lista de productos para enviar por WhatsApp.</p>
+    </div>
+
+    <button
+      type="button"
+      id="cerrar-pedido"
+      class="pedido-cerrar"
+      aria-label="Cerrar lista de pedidos"
+    >
+      &times;
+    </button>
+
+  </div>
+
+  <!-- PRODUCTOS SELECCIONADOS -->
+  <div id="pedido-productos" class="pedido-productos">
+
+    <div class="pedido-vacio">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <h3>Tu lista está vacía</h3>
+      <p>Explorá nuestros productos y agregá tus favoritos.</p>
+    </div>
+
+  </div>
+
+  <!-- RESUMEN DEL PEDIDO -->
+  <div class="pedido-resumen">
+
+    <div class="pedido-total">
+      <span>Total estimado</span>
+      <strong id="pedido-precio-total">$0</strong>
+    </div>
+
+    <p class="pedido-aviso">
+      <i class="fa-solid fa-circle-info"></i>
+      Los precios y la disponibilidad están sujetos
+      a confirmación. Tu pedido se coordina
+      directamente por WhatsApp.
+    </p>
+
+    <!-- WHATSAPP -->
+    <button
+      type="button"
+      id="enviar-pedido"
+      class="pedido-whatsapp"
+      disabled
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Consultar pedido por WhatsApp
+      <span>→</span>
+    </button>
+
+    <!-- ACCIONES -->
+    <div class="pedido-acciones">
+
+      <button type="button" id="vaciar-pedido">
+        <i class="fa-regular fa-trash-can"></i>
+        Vaciar lista
+      </button>
+
+      <button type="button" id="seguir-comprando">
+        <i class="fa-solid fa-plus"></i>
+        Seguir agregando
+      </button>
+
+    </div>
+
+  </div>
+
+</aside>
+
+<!-- JAVASCRIPT DE PEDIDOS -->
+<script src="js/pedidos.js" defer></script>
 </body>
 </html>

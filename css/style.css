@@ -268,7 +268,7 @@ html {
 /* header (todo dentro de la imagen)*/
 .indexheader {
   background-image: url(../img/indexheaderbackground.webp.webp);
-  height: 90vh;
+  height: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -621,4 +621,1946 @@ main {
     margin-top: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+/* ==========================================
+   KINGMIX - NUEVA PORTADA MODERNA
+========================================== */
+
+/* PORTADA PRINCIPAL */
+
+.indexheader {
+    background: #f7f5ef;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.indexheader .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background: #f7f5ef;
+}
+
+/* LOGO */
+
+.indexheader .logo {
+    width: 95px;
+    height: auto;
+}
+
+/* MENÚ */
+
+.indexheader .menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.indexheader .menu a {
+    color: #173b2b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.indexheader .menu a:hover {
+    color: #83b735;
+}
+
+/* CONTENEDOR DE LA PORTADA */
+
+.indexheader .hero-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 35px 6% 65px;
+
+    background: transparent;
+    border-radius: 0;
+    backdrop-filter: none;
+}
+
+/* TEXTOS */
+
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* ETIQUETA SUPERIOR */
+
+.hero-etiqueta {
+    color: #79a82e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* TÍTULO PRINCIPAL */
+
+.indexheader .tituloindex {
+    font-size: clamp(38px, 4.5vw, 68px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #173b2b;
+    text-shadow: none;
+    margin: 0;
+}
+
+/* DESCRIPCIÓN */
+
+.indexheader .parrafoindex {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #555;
+    text-shadow: none;
+    max-width: 450px;
+    margin: 0;
+}
+
+/* BOTÓN PRINCIPAL */
+
+.indexheader .indexheaderbtn {
+    display: inline-block;
+    background: #173b2b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+
+    box-shadow: 0 6px 18px rgba(23, 59, 43, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.indexheader .indexheaderbtn:hover {
+    background: #83b735;
+    color: #173b2b;
+    transform: translateY(-3px);
+}
+
+/* IMAGEN DE PORTADA */
+
+.hero-imagen {
+    width: 100%;
+}
+
+.hero-imagen img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 24px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.4s ease;
+}
+
+.hero-imagen img:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width: 768px) {
+
+    .indexheader {
+        height: auto;
+        min-height: 0;
+    }
+
+    .indexheader .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .indexheader .logo {
+        width: 80px;
+    }
+
+    .indexheader .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .indexheader .hero-contenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 35px 20px 45px;
+    }
+
+    .hero-texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .indexheader .tituloindex {
+        font-size: clamp(32px, 8vw, 44px);
+    }
+
+    .indexheader .parrafoindex {
+        font-size: 15px;
+    }
+
+    .hero-imagen img {
+        height: 250px;
+        border-radius: 18px;
+    }
+
+}
+
+/* =====================================
+   KINGMIX - NOMBRE EN BARRA SUPERIOR
+===================================== */
+
+/* ==================================
+   KINGMIX - NAVBAR MODERNO
+================================== */
+
+.indexheader .navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+
+  padding: 12px 6%;
+  background-color: #f7f5ef;
+}
+/* LOGO INTERACTIVO */
+
+.indexheader .logo {
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.indexheader .logo:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 25px rgba(131, 183, 53, 0.25);
+}
+
+/* ENLACES DEL MENÚ */
+
+.indexheader .menu a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+
+  transition: color 0.3s ease;
+}
+
+/* SUBRAYADO ANIMADO */
+
+.indexheader .menu a::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background-color: #83b735;
+
+  transition: width 0.3s ease;
+}
+
+.indexheader .menu a:hover::after {
+  width: 100%;
+}
+
+.indexheader .menu a:hover {
+  color: #83b735;
+}
+
+/* ACCESIBILIDAD */
+
+.indexheader .menu a:focus-visible,
+.indexheader .navbar-marca:focus-visible {
+  outline: 2px solid #83b735;
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .indexheader .logo,
+  .indexheader .menu a,
+  .indexheader .menu a::after {
+    transition: none;
+  }
+}
+
+/* LOGO A LA IZQUIERDA */
+
+.indexheader .logo {
+    justify-self: start;
+}
+
+/* NOMBRE CENTRAL */
+
+.navbar-marca {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #173b2b;
+    text-decoration: none;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.navbar-marca span {
+    color: #83b735;
+}
+
+.navbar-marca:hover {
+    transform: scale(1.05);
+}
+
+/* MENÚ A LA DERECHA */
+
+.indexheader .menu {
+    justify-self: end;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .indexheader .navbar {
+        grid-template-columns: auto 1fr;
+        gap: 15px;
+    }
+
+    .navbar-marca {
+        font-size: 36px;
+        justify-self: end;
+    }
+
+    .indexheader .menu {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+}
+
+/* KINGMIX - AJUSTE DE ALTURA DE PORTADA */
+
+.indexheader .hero-contenido {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .indexheader .hero-contenido {
+        padding: 25px 20px 35px;
+    }
+}
+/* =====================================
+   KINGMIX - CORRECCIÓN DE MÁRGENES
+===================================== */
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body,
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Evitar que las secciones generen espacios laterales */
+
+.indexheader,
+.sobre-productos {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   KINGMIX - SECCIÓN SOBRE NOSOTROS
+========================================== */
+
+.sobre-productos {
+    background: #173b2b;
+    padding: 65px 6%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.sobre-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ETIQUETA SUPERIOR */
+
+.sobre-etiqueta {
+    display: block;
+    color: #a3d65c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* TÍTULO */
+
+.sobre-productos .sobre-contenedor h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/* DESCRIPCIÓN */
+
+.sobre-productos .sobre-descripcion {
+    color: #e1e9e3;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+/* CONTENEDOR DE BENEFICIOS */
+
+.sobre-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* TARJETAS */
+
+.sobre-productos .beneficio-card {
+    background: #24513b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 30px 22px;
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.sobre-productos .beneficio-card:hover {
+    transform: translateY(-6px);
+    background: #2d6248;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ICONOS */
+
+.sobre-productos .beneficio-icono {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+/* TÍTULOS DE LAS TARJETAS */
+
+.sobre-productos .beneficio-card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+/* DESCRIPCIONES DE LAS TARJETAS */
+
+.sobre-productos .beneficio-card p {
+    color: #dce9df;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================
+   RESPONSIVE - TABLETS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .sobre-beneficios {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+    .sobre-productos {
+        padding: 45px 20px;
+    }
+
+    .sobre-productos .sobre-descripcion {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-beneficios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .sobre-productos .beneficio-card {
+        padding: 25px 20px;
+    }
+
+    .sobre-productos .beneficio-card h3 {
+        font-size: 18px;
+    }
+
+}
+/* ==========================================
+   KINGMIX - TARJETAS DE CATEGORÍAS MODERNAS
+========================================== */
+
+/* SECCIÓN DE PRODUCTOS */
+
+.productos {
+    background: #f7f5ef;
+    padding: 65px 6%;
+}
+
+/* CONTENEDOR DE TARJETAS */
+
+.productos .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* TARJETAS */
+
+.productos .articuloimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #ffffff;
+    border: 1px solid #e8e8e0;
+    border-radius: 20px;
+    padding: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* EFECTO HOVER */
+
+.productos .articuloimg:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(23, 59, 43, 0.12);
+}
+
+/* IMÁGENES */
+
+.productos .articuloimg img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+/* NOMBRE DE CATEGORÍA */
+
+.productos .articuloimg h4 {
+    color: #173b2b;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    margin: 22px 0;
+}
+
+/* BOTÓN */
+
+.productos .articuloimg .boton-comprar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: auto;
+    padding: 13px 18px;
+
+    background: #173b2b;
+    color: #ffffff;
+    border-radius: 12px;
+    border: none;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+    transition: background 0.3s ease;
+}
+
+.productos .articuloimg .boton-comprar:hover {
+    background: #83b735;
+    color: #173b2b;
+}
+
+/* TABLETS */
+
+@media (max-width: 1024px) {
+
+    .productos .contenedor-productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .productos {
+        padding: 40px 20px;
+    }
+
+    .productos .contenedor-productos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .productos .articuloimg img {
+        height: 230px;
+    }
+
+}
+/* ==========================================
+   KINGMIX - EFECTOS MODERNOS EN TARJETAS
+========================================== */
+
+/* TRANSICIÓN SUAVE EN LAS FOTOGRAFÍAS */
+
+.productos .articuloimg img {
+    transition: transform 0.4s ease;
+}
+
+/* ZOOM AL PASAR EL MOUSE SOBRE LA TARJETA */
+
+.productos .articuloimg:hover img {
+    transform: scale(1.05);
+}
+
+/* MEJORA DE LOS BOTONES */
+
+.productos .articuloimg .boton-comprar {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE SOBRE EL BOTÓN */
+
+.productos .articuloimg .boton-comprar:hover {
+    background-color: #83b735;
+    color: #173b2b;
+    transform: translateY(-2px);
+}
+
+/* RESPETAR PREFERENCIAS DE MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+    .productos .articuloimg img,
+    .productos .articuloimg .boton-comprar {
+        transition: none;
+    }
+}
+
+/* =====================================
+   KINGMIX - SECCIÓN MAYORISTA MODERNA
+===================================== */
+
+.productos-encargo {
+    background: #f4f0e9;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mayorista-card {
+    background: #173b2c;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1050px;
+    padding: 65px 40px;
+    border-radius: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.mayorista-etiqueta {
+    display: inline-block;
+    color: #a4d43b;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.mayorista-card h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 800;
+    margin: 10px 0 25px;
+}
+
+.mayorista-descripcion {
+    color: #e5eee8;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.mayorista-card .consulta-catalogo {
+    color: #c6d8cd;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.mayorista-card .boton-catalogo {
+    display: inline-block;
+    background: #9acd32;
+    color: #173b2c;
+    padding: 16px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.mayorista-card .boton-catalogo:hover {
+    background: #b5e64a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 768px) {
+
+    .productos-encargo {
+        padding: 45px 15px;
+    }
+
+    .mayorista-card {
+        padding: 45px 22px;
+        border-radius: 18px;
+    }
+
+    .mayorista-card h2 {
+        font-size: 30px;
+    }
+
+    .mayorista-descripcion {
+        font-size: 16px;
+    }
+
+    .mayorista-card .boton-catalogo {
+        padding: 15px 22px;
+        font-size: 14px;
+    }
+}
+/* ==================================
+   FOOTER MODERNO KINGMIX
+================================== */
+
+.footer-kingmix {
+  background-color: #173b2c;
+  color: #ffffff;
+  padding: 70px 8% 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.footer-contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+  padding-bottom: 50px;
+}
+
+/* LOGO Y DESCRIPCIÓN */
+
+.footer-marca h2 {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-marca h2 span {
+  color: #a3d12d;
+}
+
+.footer-marca p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #d4e2d8;
+  max-width: 320px;
+}
+
+/* TÍTULOS */
+
+.footer-columna h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* ENLACES DE NAVEGACIÓN */
+
+.footer-columna ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columna ul li {
+  margin-bottom: 14px;
+}
+
+.footer-columna ul li a {
+  color: #d4e2d8;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-columna ul li a:hover {
+  color: #a3d12d;
+  padding-left: 5px;
+}
+
+/* REDES SOCIALES */
+
+.footer-red {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d4e2d8;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-red i {
+  font-size: 23px;
+  color: #a3d12d;
+}
+
+.footer-red:hover {
+  color: #a3d12d;
+  transform: translateX(5px);
+}
+
+/* PARTE INFERIOR */
+
+.footer-inferior {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-inferior p {
+  font-size: 13px;
+  color: #b9cfc1;
+  margin: 0;
+}
+
+/* ==================================
+   RESPONSIVE TABLET
+================================== */
+
+@media (max-width: 900px) {
+
+  .footer-contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer-marca {
+    grid-column: 1 / -1;
+  }
+
+}
+
+/* ==================================
+   RESPONSIVE CELULAR
+================================== */
+
+@media (max-width: 600px) {
+
+  .footer-kingmix {
+    padding: 50px 6% 25px;
+  }
+
+  .footer-contenedor {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-bottom: 35px;
+  }
+
+  .footer-marca {
+    grid-column: auto;
+  }
+
+  .footer-marca h2 {
+    font-size: 32px;
+  }
+
+  .footer-columna h3 {
+    margin-bottom: 18px;
+  }
+
+  .footer-inferior {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+}
+/* ==========================================
+   KINGMIX - SISTEMA DE PEDIDOS
+========================================== */
+
+/* BOTÓN FLOTANTE */
+
+.pedido-flotante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 15px 22px;
+
+  background: #008b45;
+  color: white;
+
+  border: none;
+  border-radius: 50px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.3s ease,
+              background 0.3s ease;
+}
+
+.pedido-flotante:hover {
+  background: #006b35;
+  transform: translateY(-4px);
+}
+
+.pedido-flotante i {
+  font-size: 21px;
+}
+
+/* CONTADOR */
+
+#contador-pedido {
+  background: #ff4545;
+  color: white;
+
+  min-width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* FONDO OSCURO */
+
+.pedido-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 1999;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.3s ease,
+              visibility 0.3s ease;
+}
+
+.pedido-overlay.activo {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* PANEL LATERAL */
+
+.panel-pedido {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 430px;
+  max-width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  background: #ffffff;
+
+  z-index: 2000;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  box-shadow: -10px 0 35px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(105%);
+
+  transition: transform 0.35s ease;
+}
+
+.panel-pedido.activo {
+  transform: translateX(0);
+}
+
+/* ENCABEZADO */
+
+.pedido-encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 25px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.pedido-encabezado h2 {
+  font-size: 23px;
+  font-weight: 800;
+  color: #173b2c;
+  margin: 0 0 8px;
+}
+
+.pedido-encabezado h2 i {
+  margin-right: 8px;
+}
+
+.pedido-encabezado p {
+  color: #777777;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* CERRAR PANEL */
+
+.pedido-cerrar {
+  background: none;
+  border: none;
+
+  font-size: 30px;
+  color: #173b2c;
+
+  cursor: pointer;
+
+  line-height: 1;
+}
+
+/* LISTA DE PRODUCTOS */
+
+.pedido-productos {
+  flex: 1;
+  overflow-y: auto;
+
+  padding: 20px;
+}
+
+/* LISTA VACÍA */
+
+.pedido-vacio {
+  text-align: center;
+  padding: 60px 15px;
+  color: #777777;
+}
+
+.pedido-vacio i {
+  font-size: 45px;
+  color: #83b735;
+  margin-bottom: 20px;
+}
+
+.pedido-vacio h3 {
+  color: #173b2c;
+  margin-bottom: 10px;
+}
+
+.pedido-vacio p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* RESUMEN */
+
+.pedido-resumen {
+  padding: 20px;
+
+  border-top: 1px solid #eeeeee;
+
+  background: #ffffff;
+
+  overflow-y: auto;
+}
+
+/* TOTAL */
+
+.pedido-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 18px;
+
+  background: #edf8e9;
+
+  border-radius: 12px;
+
+  color: #173b2c;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.pedido-total strong {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+/* AVISO */
+
+.pedido-aviso {
+  display: flex;
+  gap: 10px;
+
+  padding: 15px;
+
+  background: #f2f8ef;
+
+  border-radius: 10px;
+
+  color: #315c43;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.pedido-aviso i {
+  font-size: 18px;
+}
+
+/* BOTÓN WHATSAPP */
+
+.pedido-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+
+  padding: 16px 12px;
+
+  background: #008b45;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+.pedido-whatsapp:hover:not(:disabled) {
+  background: #006b35;
+  transform: translateY(-2px);
+}
+
+.pedido-whatsapp:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pedido-whatsapp i {
+  font-size: 21px;
+}
+
+/* BOTONES INFERIORES */
+
+.pedido-acciones {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+.pedido-acciones button {
+  flex: 1;
+
+  padding: 13px 8px;
+
+  background: white;
+  color: #173b2c;
+
+  border: 1px solid #008b45;
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.pedido-acciones button:hover {
+  background: #edf8e9;
+}
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+  .panel-pedido {
+    width: 100%;
+  }
+
+  .pedido-flotante {
+    bottom: 15px;
+    right: 15px;
+
+    padding: 12px 16px;
+
+    font-size: 14px;
+  }
+
+  .pedido-encabezado {
+    padding: 20px;
+  }
+
+  .pedido-encabezado h2 {
+    font-size: 20px;
+  }
+
+  .pedido-productos {
+    padding: 15px;
+  }
+
+  .pedido-resumen {
+    padding: 15px;
+  }
+
+  .pedido-total strong {
+    font-size: 22px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pedido-flotante,
+  .pedido-overlay,
+  .panel-pedido,
+  .pedido-whatsapp {
+    transition: none;
+  }
+}
+/* ==========================================
+   KINGMIX - SELECTOR DE PEDIDOS
+========================================== */
+
+.selector-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #f7f5ef;
+    border: 1px solid #e1e8dc;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+/* ETIQUETAS */
+
+.selector-pedido label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #173b2b;
+}
+
+/* SELECTOR DE PRESENTACIÓN */
+
+.selector-pedido select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8c5;
+    border-radius: 10px;
+    background: white;
+    color: #173b2b;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* CANTIDAD */
+
+.selector-pedido input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8c5;
+    border-radius: 10px;
+    background: white;
+    color: #173b2b;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* EFECTO AL SELECCIONAR */
+
+.selector-pedido select:focus,
+.selector-pedido input:focus {
+    border-color: #8bc735;
+    box-shadow: 0 0 0 3px rgba(139, 199, 53, 0.15);
+}
+
+/* BOTÓN AGREGAR AL PEDIDO */
+
+.boton-agregar-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+
+    background: #173b2b;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER */
+
+.boton-agregar-pedido:hover {
+    background: #8bc735;
+    color: #173b2b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(23, 59, 43, 0.15);
+}
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 768px) {
+
+    .selector-pedido {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .boton-agregar-pedido {
+        font-size: 14px;
+        padding: 13px;
+    }
+
+}
+/* =====================================
+   KINGMIX - ELIMINAR PRODUCTO
+===================================== */
+
+.pedido-eliminar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 12px;
+  padding: 9px 16px;
+
+  background-color: #fff1f0;
+  color: #b42318;
+
+  border: 1px solid #fecdca;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pedido-eliminar:hover {
+  background-color: #b42318;
+  color: white;
+  border-color: #b42318;
+}
+
+/* ==========================================
+   KINGMIX - TARJETAS DEL PANEL DE PEDIDOS
+========================================== */
+
+.pedido-productos {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Tarjeta individual */
+
+.pedido-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: #f8f7f2;
+
+  border: 1px solid #e5e9df;
+  border-radius: 14px;
+
+  padding: 18px;
+  margin-bottom: 15px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+
+  transition: all 0.2s ease;
+}
+
+.pedido-item:hover {
+  border-color: #a5c89b;
+  box-shadow: 0 5px 16px rgba(23, 59, 44, 0.08);
+}
+
+/* Nombre del producto */
+
+.pedido-item strong {
+  font-size: 17px;
+  font-weight: 700;
+  color: #173b2c;
+}
+
+/* Información del producto */
+
+.pedido-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #5b665e;
+  line-height: 1.5;
+}
+
+/* Subtotal */
+
+.pedido-item p:last-of-type {
+  font-size: 15px;
+  font-weight: 700;
+  color: #173b2c;
+}
+
+/* Botón eliminar */
+
+.pedido-item .pedido-eliminar {
+  align-self: flex-end;
+
+  margin-top: 5px;
+  padding: 9px 15px;
+
+  background-color: #fff1f0;
+  color: #b42318;
+
+  border: 1px solid #fecdca;
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pedido-item .pedido-eliminar:hover {
+  background-color: #b42318;
+  color: #ffffff;
+  border-color: #b42318;
+}
+/* ==========================================
+   KINGMIX - CONTROLES DE CANTIDAD
+========================================== */
+
+/* Contenedor de cantidad */
+
+.pedido-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.pedido-cantidad > span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #173b2c;
+}
+
+/* Contenedor de botones */
+
+.pedido-controles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #ffffff;
+  border: 1px solid #dce5d8;
+  border-radius: 10px;
+
+  padding: 5px;
+}
+
+/* Botones + y - */
+
+.pedido-cantidad-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: #eaf4e7;
+  color: #173b2c;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pedido-cantidad-boton:hover {
+  background-color: #173b2c;
+  color: #ffffff;
+}
+
+/* Número de unidades */
+
+.pedido-cantidad-numero {
+  min-width: 24px;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #173b2c;
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 480px) {
+  .pedido-cantidad {
+    flex-wrap: wrap;
+  }
+
+  .pedido-controles {
+    gap: 8px;
+  }
+}
+/* ==========================================
+   KINGMIX - REDISEÑO MODERNO DE SNACKS
+   ========================================== */
+
+/* FONDO GENERAL */
+
+.pagina-productos {
+    background-color: #f7f5ef;
+}
+
+/* CONTENEDOR DE PRODUCTOS */
+
+.pagina-productos .lista-productos {
+    gap: 28px;
+    padding: 40px 25px;
+}
+
+/* TARJETAS */
+
+.pagina-productos .producto-snack {
+    background-color: #ffffff;
+    border: 1px solid #e8e8df;
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow: 0 5px 20px rgba(23, 59, 44, 0.07);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.pagina-productos .producto-snack:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 30px rgba(23, 59, 44, 0.13);
+}
+
+/* TITULOS DE PRODUCTOS */
+
+.pagina-productos .producto-snack h3 {
+    color: #173b2c;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* IMAGENES */
+
+.pagina-productos .producto-snack img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: contain;
+
+    background-color: #faf9f6;
+
+    border-radius: 15px;
+
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* PRECIOS */
+
+.pagina-productos .precios-producto {
+    color: #493d32;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagina-productos .precios-producto p {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.pagina-productos .precios-producto strong {
+    color: #173b2c;
+}
+
+/* BENEFICIOS */
+
+.pagina-productos .producto-snack .beneficios-producto {
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.pagina-productos .beneficios-producto summary {
+    background-color: #173b2c;
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    text-align: center;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.pagina-productos .beneficios-producto summary:hover {
+    background-color: #245c43;
+}
+
+/* CONTENIDO DE BENEFICIOS */
+
+.pagina-productos .beneficios-contenido {
+    background-color: #f7f5ef;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    color: #173b2c;
+}
+
+/* BOTON COMPRAR */
+
+.pagina-productos .producto-snack .boton-comprar {
+    background-color: #173b2c;
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 14px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    transition: background-color 0.3s ease;
+}
+
+.pagina-productos .producto-snack .boton-comprar:hover {
+    background-color: #245c43;
+}
+/* ==========================================
+   KINGMIX - NUEVO ENCABEZADO SNACKS
+   ========================================== */
+
+.header-snacks {
+    background: #173b2c;
+    color: #ffffff;
+    text-align: center;
+    padding: 65px 25px;
+    position: relative;
+}
+
+.header-snacks h1 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.header-snacks p {
+    display: block;
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    color: #f7f5ef;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 0 0;
+    text-align: center;
+}
+.header-snacks a {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color: #a3d32f;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header-snacks a:hover {
+    color: #ffffff;
+}
+
+/* Detalle decorativo debajo del título */
+
+.header-snacks h1::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #a3d32f;
+    border-radius: 10px;
+    margin: 15px auto 0;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 768px) {
+
+    .header-snacks {
+        padding: 85px 20px 45px;
+    }
+
+    .header-snacks h1 {
+        font-size: 32px;
+    }
+
+    .header-snacks p {
+        font-size: 16px;
+    }
+
+    .header-snacks a {
+        top: 20px;
+        left: 20px;
+        font-size: 14px;
+    }
+}
+
+/* =====================================
+   KINGMIX - BOTONES MODERNOS SNACKS
+   ===================================== */
+
+/* Botón de beneficios */
+
+.pagina-productos .producto-snack .beneficios-producto summary {
+    background: #173b2c;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagina-productos .producto-snack .beneficios-producto summary:hover {
+    background: #24543e;
+}
+
+/* Botón agregar al pedido */
+
+.pagina-productos .producto-snack .boton-agregar-pedido {
+    background: #a3d32f;
+    color: #173b2c;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagina-productos .producto-snack .boton-agregar-pedido:hover {
+    background: #8fbd20;
+    transform: translateY(-2px);
+}
+
+/* Botón WhatsApp */
+
+.pagina-productos .producto-snack .boton-comprar {
+    background: #25d366;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pagina-productos .producto-snack .boton-comprar:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
 }
