@@ -2564,3 +2564,24 @@ body,
     background: #1ebe5d;
     transform: translateY(-2px);
 }
+/* ==========================================
+   KINGMIX - CENTRADO DE TARJETAS EN CELULAR
+========================================== */
+
+@media (max-width: 768px) {
+
+    .contenedor-productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .articuloimg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
