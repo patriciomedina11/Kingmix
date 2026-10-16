@@ -2585,3 +2585,72 @@ body,
     }
 
 }
+/* ==========================================
+   KINGMIX - DISEÑO MODERNO PARA MIXES
+========================================== */
+
+/* Fondo general */
+body.pagina-mixes {
+    background-color: #f7f5ef;
+}
+
+/* Encabezado */
+.pagina-mixes .header-snacks {
+    background-color: #173b2c;
+    color: white;
+}
+
+/* Títulos de productos */
+.pagina-mixes .producto-snack h3 {
+    color: #173b2c;
+    font-weight: 700;
+}
+
+/* Tarjetas */
+.pagina-mixes .producto-snack {
+    background-color: #ffffff;
+    border: 1px solid #e8e8df;
+    border-radius: 22px;
+    padding: 24px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.pagina-mixes .producto-snack:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* Ingredientes */
+.pagina-mixes .ingredientes {
+    color: #5c3a21;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Precios */
+.pagina-mixes .precios-producto {
+    color: #173b2c;
+}
+
+/* Botón WhatsApp */
+.pagina-mixes .producto-snack .boton-comprar {
+    background-color: #173b2c;
+    color: white;
+
+    border-radius: 12px;
+    padding: 15px;
+
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Hover WhatsApp */
+.pagina-mixes .producto-snack .boton-comprar:hover {
+    background-color: #255d46;
+}

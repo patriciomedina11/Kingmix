@@ -488,11 +488,43 @@ const nuevosProductos = [
         nombre: "Semillas de Zapallo",
         id: "zapallo"
     },
-    {
-        nombre: "Barritas Proteicas Entrenuts",
-        id: "barritas"
-    }
+  {
+    nombre: "Barritas Proteicas Entrenuts",
+    id: "barritas"
+},
+{
+    nombre: "Mix Deportivo",
+    id: "deportivo"
+},
+{
+    nombre: "Mix Brasilero",
+    id: "brasilero"
+},
+{
+    nombre: "Mix Especial",
+    id: "especial"
+},
+{
+    nombre: "Mix Deluxe",
+    id: "deluxe"
+},
+{
+    nombre: "Mix Semillas",
+    id: "semillas"
+},
+{
+    nombre: "Granola Energética",
+    id: "granola"
+},
+{
+    nombre: "Granola Rústica",
+    id: "rustica"
+}
 ];
+
+
+
+
 
 nuevosProductos.forEach(producto => {
 
