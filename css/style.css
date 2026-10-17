@@ -2640,7 +2640,7 @@ body.pagina-mixes {
 
 /* Botón WhatsApp */
 .pagina-mixes .producto-snack .boton-comprar {
-    background-color: #173b2c;
+   background-color: #1ed760;
     color: white;
 
     border-radius: 12px;
@@ -2653,4 +2653,17 @@ body.pagina-mixes {
 /* Hover WhatsApp */
 .pagina-mixes .producto-snack .boton-comprar:hover {
     background-color: #255d46;
+}
+/* =====================================
+   KINGMIX - BOTONES WHATSAPP UNIFICADOS
+===================================== */
+
+.producto-snack .boton-comprar {
+    background-color: #1ed760;
+    color: #ffffff;
+}
+
+.producto-snack .boton-comprar:hover {
+    background-color: #17b850;
+    color: #ffffff;
 }

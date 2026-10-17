@@ -519,12 +519,60 @@ const nuevosProductos = [
 {
     nombre: "Granola Rústica",
     id: "rustica"
+},
+
+{
+    nombre: "Pasta de Maní Natural",
+    id: "pasta-natural"
+},
+
+{
+    nombre: "Pasta de Maní Protein (Cookies & Cream)",
+    id: "pasta-protein"
+},
+
+{
+    nombre: "Pasta de Maní Mix Semillas",
+    id: "pasta-semillas"
+},
+
+
+{
+    nombre: "Premezcla Pan",
+    id: "premezcla-pan"
+},
+
+{
+    nombre: "Premezcla para Pizza",
+    id: "premezcla-pizza"
+},
+
+{
+    nombre: "Premezcla Universal",
+    id: "premezcla-universal"
+},
+
+{
+    nombre: "Bizcochuelo de Chocolate",
+    id: "bizcochuelo-chocolate"
+},
+
+{
+    nombre: "Bizcochuelo de Vainilla",
+    id: "bizcochuelo-vainilla"
+},
+
+{
+    nombre: "Rebozador",
+    id: "rebozador"
+},
+
+{
+    nombre: "Premezcla para Ñoquis",
+    id: "premezcla-noquis"
 }
+
 ];
-
-
-
-
 
 nuevosProductos.forEach(producto => {
 
@@ -581,9 +629,15 @@ if (producto.id === "mani") {
     nombreProducto = "Maní tostado " + variedad;
 }
 
+const esPastaMani = producto.id.startsWith("pasta-");
+
+const esPremezcla = producto.id.startsWith("premezcla-");
+
 agregarProducto(
     nombreProducto,
-    presentacion + " g",
+    esPastaMani
+        ? presentacion
+        : presentacion + " g",
     cantidad,
     precio
 );

@@ -13,126 +13,685 @@
     <header class="header-snacks">
       <a href="../index.html">← Volver al inicio</a>
         <h1>Premezclas KingMix</h1>
-        <p>Elegí tus favoritos</p>
+      
     </header>
     <main class="pagina-productos">
 
    <h2>Nuestras Premezclas</h2>
         <p>Conocé nuestras opciones y elegí tu favorita</p>
+
 <section class="lista-productos">
+
+<!-- PREMEZCLA PAN -->
+
 <article class="producto-snack">
 
     <h3>Premezcla Pan</h3>
-<img src="../img/premezclauniversal.jpeg" alt="Premezcla Universal KingMix">
 
+    <img
+        src="../img/premezclauniversal.jpeg"
+        alt="Premezcla Pan sin TACC KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
-<p><strong>Sin TACC</strong></p>
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20la%20Premezcla%20Universal">
-    Comprar por WhatsApp
-</a>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
+
+    <!-- BENEFICIOS -->
+
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
+
+        <p>
+            🍞 Ideal para preparar panificados sin gluten.
+            Una alternativa práctica para elaborar
+            panes caseros y disfrutar de diferentes recetas.
+        </p>
+
+    </details>
+
+    <!-- SELECTOR DE PEDIDO -->
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-premezcla-pan">
+            Elegí la presentación:
+        </label>
+
+      <select id="presentacion-premezcla-pan">
+
+    <option value="">
+        Seleccionar presentación
+    </option>
+
+    <option value="500" data-precio="4000">
+        500 g — $4.000
+    </option>
+
+</select>
+
+        <label for="cantidad-premezcla-pan">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-premezcla-pan"
+            min="1"
+            value="1"
+        >
+
+      <button
+    type="button"
+    class="boton-agregar-pedido"
+    data-producto="Premezcla Pan"
+    data-select="presentacion-premezcla-pan"
+    data-cantidad="cantidad-premezcla-pan"
+>
+    Agregar a mi pedido
+</button>
+
+    </div>
+
+    <!-- WHATSAPP -->
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20la%20Premezcla%20Pan%20sin%20TACC"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
+<!-- ================================= -->
+<!-- PREMEZCLA PARA PIZZA -->
+<!-- ================================= -->
+
 <article class="producto-snack">
 
     <h3>Premezcla para Pizza</h3>
-<img src="../img/pizza.webp" alt="Premezcla para Pizza KingMix">
 
+    <img
+        src="../img/pizza.webp"
+        alt="Premezcla para Pizza sin TACC KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
 
-<p><strong>Sin TACC</strong></p>
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20la%20Premezcla%20para%20Pizza">
-Comprar por WhatsApp
-</a>
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
+
+        <p>
+            Ideal para preparar pizzas caseras sin gluten.
+            Una alternativa práctica para disfrutar
+            de tus pizzas favoritas.
+        </p>
+    </details>
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-premezcla-pizza">
+            Elegí la presentación:
+        </label>
+
+        <select id="presentacion-premezcla-pizza">
+
+            <option value="">
+                Seleccionar presentación
+            </option>
+
+            <option value="500" data-precio="4000">
+                500 g — $4.000
+            </option>
+
+        </select>
+
+        <label for="cantidad-premezcla-pizza">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-premezcla-pizza"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Premezcla para Pizza"
+            data-select="presentacion-premezcla-pizza"
+            data-cantidad="cantidad-premezcla-pizza"
+        >
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20la%20Premezcla%20para%20Pizza"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
+
+
+<!-- ================================= -->
+<!-- PREMEZCLA UNIVERSAL -->
+<!-- ================================= -->
+
 <article class="producto-snack">
 
-    <h3>Premezcla universal</h3>
-<img src="../img/panaderia.webp" alt="Premezcla para Bizcochuelo de Chocolate KingMix">
+    <h3>Premezcla Universal</h3>
 
+    <img
+        src="../img/panaderia.webp"
+        alt="Premezcla Universal sin TACC KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
 
-<p><strong>Sin TACC</strong></p>
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20la%20Premezcla%20para%20Bizcochuelo%20de%20Chocolate">
-  Comprar por WhatsApp
-</a>
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
+
+        <p>
+            Premezcla versátil para preparar diferentes
+            recetas sin gluten. Ideal para utilizar
+            en distintas elaboraciones caseras.
+        </p>
+    </details>
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-premezcla-universal">
+            Elegí la presentación:
+        </label>
+
+        <select id="presentacion-premezcla-universal">
+
+            <option value="">
+                Seleccionar presentación
+            </option>
+
+            <option value="500" data-precio="4000">
+                500 g — $4.000
+            </option>
+
+        </select>
+
+        <label for="cantidad-premezcla-universal">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-premezcla-universal"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Premezcla Universal"
+            data-select="presentacion-premezcla-universal"
+            data-cantidad="cantidad-premezcla-universal"
+        >
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20la%20Premezcla%20Universal"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
-          <article class="producto-snack">
+
+
+<!-- ================================= -->
+<!-- BIZCOCHUELO DE CHOCOLATE -->
+<!-- ================================= -->
+
+<article class="producto-snack">
 
     <h3>Bizcochuelo de Chocolate</h3>
-<img src="../img/bizcochuelodechocolate.webp" alt="Bizcochuelo de Chocolate KingMix">
 
+    <img
+        src="../img/bizcochuelodechocolate.webp"
+        alt="Premezcla Bizcochuelo de Chocolate KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
-<p><strong>Sin TACC</strong></p>
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20del%20Bizcochuelo%20de%20Chocolate">
-   Comprar por WhatsApp
-</a>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
+
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
+
+        <p>
+            Ideal para preparar bizcochuelos de chocolate
+            sin gluten. Perfecta para tortas,
+            desayunos y meriendas.
+        </p>
+    </details>
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-bizcochuelo-chocolate">
+            Elegí la presentación:
+        </label>
+
+        <select id="presentacion-bizcochuelo-chocolate">
+
+            <option value="">
+                Seleccionar presentación
+            </option>
+
+            <option value="500" data-precio="4000">
+                500 g — $4.000
+            </option>
+
+        </select>
+
+        <label for="cantidad-bizcochuelo-chocolate">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-bizcochuelo-chocolate"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Bizcochuelo de Chocolate"
+            data-select="presentacion-bizcochuelo-chocolate"
+            data-cantidad="cantidad-bizcochuelo-chocolate"
+        >
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20el%20Bizcochuelo%20de%20Chocolate"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
+
+
+<!-- ================================= -->
+<!-- BIZCOCHUELO DE VAINILLA -->
+<!-- ================================= -->
+
 <article class="producto-snack">
 
     <h3>Bizcochuelo de Vainilla</h3>
-<img src="../img/bizcochuelodevainilla.webp" alt="Bizcochuelo de Vainilla KingMix">
 
+    <img
+        src="../img/bizcochuelodevainilla.webp"
+        alt="Premezcla Bizcochuelo de Vainilla KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
 
-<p><strong>Sin TACC</strong></p>
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20del%20Bizcochuelo%20de%20Vainilla">
-  Comprar por WhatsApp
-</a>
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
+
+        <p>
+            Ideal para preparar bizcochuelos de vainilla
+            sin gluten. Perfecta para tortas,
+            postres y meriendas.
+        </p>
+    </details>
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-bizcochuelo-vainilla">
+            Elegí la presentación:
+        </label>
+
+        <select id="presentacion-bizcochuelo-vainilla">
+
+            <option value="">
+                Seleccionar presentación
+            </option>
+
+            <option value="500" data-precio="4000">
+                500 g — $4.000
+            </option>
+
+        </select>
+
+        <label for="cantidad-bizcochuelo-vainilla">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-bizcochuelo-vainilla"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Bizcochuelo de Vainilla"
+            data-select="presentacion-bizcochuelo-vainilla"
+            data-cantidad="cantidad-bizcochuelo-vainilla"
+        >
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20el%20Bizcochuelo%20de%20Vainilla"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
+
+
+<!-- ================================= -->
+<!-- REBOZADOR -->
+<!-- ================================= -->
+
 <article class="producto-snack">
 
     <h3>Rebozador</h3>
-<img src="../img/rebozador.webp" alt="Rebozador KingMix">
 
+    <img
+        src="../img/rebozador.webp"
+        alt="Rebozador sin TACC KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
 
-<p><strong>Sin TACC</strong></p>
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20del%20Rebozador">
-   Comprar por WhatsApp
-</a>
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
+
+        <p>
+            Ideal para preparar milanesas y otras
+            comidas rebozadas sin gluten.
+            Una alternativa práctica para tus recetas.
+        </p>
+    </details>
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-rebozador">
+            Elegí la presentación:
+        </label>
+
+        <select id="presentacion-rebozador">
+
+            <option value="">
+                Seleccionar presentación
+            </option>
+
+            <option value="500" data-precio="4000">
+                500 g — $4.000
+            </option>
+
+        </select>
+
+        <label for="cantidad-rebozador">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-rebozador"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Rebozador"
+            data-select="presentacion-rebozador"
+            data-cantidad="cantidad-rebozador"
+        >
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20el%20Rebozador"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
+
+
+<!-- ================================= -->
+<!-- PREMEZCLA PARA ÑOQUIS -->
+<!-- ================================= -->
+
 <article class="producto-snack">
 
     <h3>Ñoquis</h3>
-<img class="img-noquis" src="../img/ñoquis5.webp" alt="Premezcla para Ñoquis KingMix">
 
+    <img
+        class="img-noquis"
+        src="../img/ñoquis5.webp"
+        alt="Premezcla para Ñoquis sin TACC KingMix"
+    >
 
-<div class="precios-producto">
-    <p><strong>500 gr</strong> — $4.000</p>
-</div>
+    <div class="precios-producto">
+        <p><strong>500 g</strong> — $4.000</p>
+    </div>
 
-<p><strong>Sin TACC</strong></p>
+    <details class="beneficios-producto">
+        <summary>¿Por qué elegirla?</summary>
 
-<a class="boton-comprar"
-   href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20el%20precio%20de%20la%20Premezcla%20para%20Ñoquis">
-    Consultar precio
-</a>
+        <p>
+            Ideal para preparar ñoquis caseros sin gluten.
+            Una opción práctica para disfrutar
+            de tus pastas favoritas.
+        </p>
+    </details>
+
+    <div class="selector-pedido">
+
+        <label for="presentacion-premezcla-noquis">
+            Elegí la presentación:
+        </label>
+
+        <select id="presentacion-premezcla-noquis">
+
+            <option value="">
+                Seleccionar presentación
+            </option>
+
+            <option value="500" data-precio="4000">
+                500 g — $4.000
+            </option>
+
+        </select>
+
+        <label for="cantidad-premezcla-noquis">
+            Cantidad:
+        </label>
+
+        <input
+            type="number"
+            id="cantidad-premezcla-noquis"
+            min="1"
+            value="1"
+        >
+
+        <button
+            type="button"
+            class="boton-agregar-pedido"
+            data-producto="Premezcla para Ñoquis"
+            data-select="presentacion-premezcla-noquis"
+            data-cantidad="cantidad-premezcla-noquis"
+        >
+            Agregar a mi pedido
+        </button>
+
+    </div>
+
+    <a
+        class="boton-comprar"
+        href="https://wa.me/5491135046185?text=Hola%20KingMix,%20quiero%20consultar%20por%20la%20Premezcla%20para%20Noquis"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Comprar por WhatsApp
+    </a>
+
 </article>
         </section>
     </main>
+         <!-- BOTÓN FLOTANTE MI PEDIDO -->
+<button
+  type="button"
+  id="abrir-pedido"
+  class="pedido-flotante"
+  aria-controls="panel-pedido"
+  aria-expanded="false"
+>
+  <i class="fa-solid fa-clipboard-list"></i>
+  Mi pedido
+  <span id="pedido-contador">0</span>
+</button>
+     <!-- FONDO OSCURO -->
+<div id="pedido-overlay" class="pedido-overlay"></div>
+
+<!-- BARRA LATERAL -->
+<aside
+  id="panel-pedido"
+  class="panel-pedido"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="titulo-pedido"
+  aria-hidden="true"
+  inert
+>
+  <!-- ENCABEZADO -->
+  <div class="pedido-encabezado">
+
+    <div>
+      <h2 id="titulo-pedido">
+        <i class="fa-solid fa-clipboard-list"></i>
+        Mi pedido KingMix
+      </h2>
+
+      <p>Tu lista de productos para enviar por WhatsApp.</p>
+    </div>
+
+    <button
+      type="button"
+      id="cerrar-pedido"
+      class="pedido-cerrar"
+      aria-label="Cerrar lista de pedidos"
+    >
+      &times;
+    </button>
+
+  </div>
+
+  <!-- PRODUCTOS SELECCIONADOS -->
+  <div id="pedido-productos" class="pedido-productos">
+
+    <div class="pedido-vacio">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <h3>Tu lista está vacía</h3>
+      <p>Explorá nuestros productos y agregá tus favoritos.</p>
+    </div>
+
+  </div>
+
+  <!-- RESUMEN DEL PEDIDO -->
+  <div class="pedido-resumen">
+
+    <div class="pedido-total">
+      <span>Total estimado</span>
+      <strong id="pedido-precio-total">$0</strong>
+    </div>
+
+    <p class="pedido-aviso">
+      <i class="fa-solid fa-circle-info"></i>
+      Los precios y la disponibilidad están sujetos
+      a confirmación. Tu pedido se coordina
+      directamente por WhatsApp.
+    </p>
+
+    <!-- WHATSAPP -->
+    <button
+      type="button"
+      id="enviar-pedido"
+      class="pedido-whatsapp"
+      disabled
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Consultar pedido por WhatsApp
+      <span>→</span>
+    </button>
+
+    <!-- ACCIONES -->
+    <div class="pedido-acciones">
+
+      <button type="button" id="vaciar-pedido">
+        <i class="fa-regular fa-trash-can"></i>
+        Vaciar lista
+      </button>
+
+      <button type="button" id="seguir-comprando">
+        <i class="fa-solid fa-plus"></i>
+        Seguir agregando
+      </button>
+
+    </div>
+
+  </div>
+
+</aside>
+
+    <script src="../js/pedidos.js"></script>
 </body>
 
 </html>
