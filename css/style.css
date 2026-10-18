@@ -1204,14 +1204,24 @@ body,
     box-shadow: 0 15px 35px rgba(23, 59, 43, 0.12);
 }
 
-/* IMÁGENES */
+/* =====================================
+   KINGMIX - IMÁGENES DE CATEGORÍAS
+===================================== */
 
 .productos .articuloimg img {
     width: 100%;
     height: 210px;
-    object-fit: cover;
+
+    object-fit: contain;
+    object-position: center;
+
     border-radius: 14px;
     display: block;
+
+    margin: 0 auto;
+    padding: 8px;
+
+    box-sizing: border-box;
 }
 
 /* NOMBRE DE CATEGORÍA */
@@ -2760,4 +2770,226 @@ body.pagina-mixes {
 
     display: block;
     margin: 0;
+}
+/* =====================================
+   KINGMIX - AJUSTE IMAGEN TARJETA SNACKS
+===================================== */
+/* KINGMIX - IMAGEN SNACKS ACTUALIZADA */
+/* KINGMIX - IMAGEN SNACKS ACTUALIZADA */
+
+.productos .articuloimg:first-child img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+}
+/* ==========================================
+   KINGMIX - IMÁGENES UNIFORMES EN HOME
+========================================== */
+
+.productos .articuloimg img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+    transform: none;
+}
+/* ==========================================
+   KINGMIX - IMÁGENES UNIFORMES EN HOME
+========================================== */
+
+.productos .articuloimg img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Imagen Snacks */
+.productos .articuloimg:first-child img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+/* ==========================================
+   KINGMIX - RESPONSIVE HOME
+   ========================================== */
+
+/* TABLETS */
+@media screen and (max-width: 1024px) {
+
+    .productos .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .productos .articuloimg {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .productos .articuloimg img,
+    .productos .articuloimg:first-child img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+}
+
+/* CELULARES */
+@media screen and (max-width: 600px) {
+
+    .productos {
+        width: 100%;
+        padding: 40px 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .productos h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .productos .contenedor-productos {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .productos .articuloimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        padding: 18px;
+        margin: 0;
+        box-sizing: border-box;
+        background: #ffffff;
+        border-radius: 20px;
+    }
+
+    .productos .articuloimg img,
+    .productos .articuloimg:first-child img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 210px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 12px;
+        padding: 0;
+        margin: 0;
+        transform: none;
+    }
+
+    .productos .articuloimg h4 {
+        font-size: 21px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .productos .articuloimg .boton-comprar {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 14px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: auto 0 0;
+        border-radius: 12px;
+        background-color: #173b2c;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+}
+
+/* ===================================================
+   KINGMIX - AJUSTE FINAL RESPONSIVE HOME (18/10/2026)
+   Solo aplica a la página principal.
+=================================================== */
+.productos .contenedor-productos {
+  width: 100%;
+}
+.productos .articuloimg {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+.productos .articuloimg img,
+.productos .articuloimg:first-child img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .productos .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 16px;
+  }
+  .productos h2 {
+    gap: 10px;
+    font-size: clamp(20px, 4.5vw, 26px);
+    text-align: center;
+  }
+  .productos h2::before,
+  .productos h2::after {
+    width: 22px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 600px) {
+  .productos {
+    padding: 40px 16px;
+  }
+  .productos .contenedor-productos {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 380px;
+    margin-inline: auto;
+  }
+  .productos .articuloimg {
+    padding: 16px;
+    height: auto;
+    margin: 0;
+  }
+  .productos .articuloimg img,
+  .productos .articuloimg:first-child img {
+    height: 210px;
+  }
+  .productos .articuloimg h4 {
+    font-size: 20px;
+    margin: 18px 0;
+  }
+  .productos .articuloimg .boton-comprar {
+    margin-top: auto;
+  }
+  .productos h2::before,
+  .productos h2::after {
+    display: none;
+  }
 }
