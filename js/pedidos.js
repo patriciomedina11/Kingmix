@@ -24,7 +24,10 @@ function agregarProducto(nombre, presentacion, cantidad, precio) {
 
     productoExistente.cantidad += cantidad;
 
-  } else {
+    // Actualizar el precio al valor vigente
+    productoExistente.precio = precio;
+
+} else {
 
     productosPedido.push({
       nombre: nombre,
@@ -631,17 +634,23 @@ if (producto.id === "mani") {
 
 const esPastaMani = producto.id.startsWith("pasta-");
 
-const esPremezcla = producto.id.startsWith("premezcla-");
+const presentacionFinal =
+    presentacion === "pote"
+        ? "Pote"
+        : esPastaMani
+            ? presentacion
+            : presentacion === "1000"
+                ? "1 kg"
+                : presentacion === "unidad"
+                    ? "Unidad"
+                    : presentacion + " g";
 
 agregarProducto(
     nombreProducto,
-    esPastaMani
-        ? presentacion
-        : presentacion + " g",
+    presentacionFinal,
     cantidad,
     precio
 );
-
         alert("¡Producto agregado a tu pedido KingMix!");
 
     });
